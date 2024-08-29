@@ -1,0 +1,117 @@
+/* variables */
+:root{
+    /* Google brand colors */
+    --googleBlue: #4285F4;
+    --googleRed: #DB4437;
+    --googleYellow: #F4B400;
+    --googleGreen: #0F9D58;
+    --googleGray: #d9d9d9;
+    --googleWhite: #FFFFFF;
+    --googleBlack: #000000;
+    --googleGrayText: #5F6368;
+}
+
+/* styles */
+body{
+    padding: 20px;
+}
+#main{
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+#searchContainer{
+    margin: 0 auto;
+    width: auto;
+    max-width: 500px;
+    position: relative;
+}
+
+/* where users will type */
+#searchBox{
+    border: none;
+    overflow: visible;
+    resize: none;
+    overflow-y: hidden; /* Hides the scrollbar */
+    word-break: break-word;
+    width: 100%;
+    padding-left: 15px;
+
+    border: 1px solid var(--googleGray);
+    box-shadow: 5px 5px 5px var(--googleGray);
+    border-radius: 100px;
+    padding: 10px;
+    padding-left: 20px;
+}
+#searchBox:focus{
+    outline: none;
+}
+/* submit button */
+input[type="submit"]{
+    background-color: var(--googleGray);
+    color: var(--googleBlack);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#submitBtns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 25px;
+    gap: 10px;
+}
+.headerTxt{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#googleLogo{
+    width: 256px;
+    height: 144px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Logo{
+    /* center the logo on the screen */
+    padding-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* 3840 × 2160 */
+
+#header{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+#navCont{
+    display: inline-block;
+    flex-grow: 1;
+}
+#nav{
+    min-width: auto;
+    float: right;
+    padding-right: 15px;
+}
+
+.navItem{
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.button{
+    text-decoration: none;
+    color: var(--googleGrayText);
+}
+.button:hover{
+    text-decoration: underline;
+}
